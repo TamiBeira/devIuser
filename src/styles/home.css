@@ -20,7 +20,7 @@
 .container main h2,
 .container main h2 strong,
 .container main h4{
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.625rem;
     color: var(--white);
 }
 
