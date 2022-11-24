@@ -1,0 +1,16 @@
+@import "global.css";
+
+/*Mobile First*/
+button{
+    width: var(--button-width-resp);
+    height: var(--button-height-resp);
+    border: var(--button-border);
+    border-color: var(--blue);
+    border-radius: var(--button-border-radius);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+button:hover{
+    background-color: var(--blue-hover);
+}

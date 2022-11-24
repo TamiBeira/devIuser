@@ -1,0 +1,21 @@
+@import "global.css";
+
+/*Mobile First*/
+.header{
+    background-color: var(--gray);
+    justify-content: space-around;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    margin: 0.625rem;
+}
+
+.menu ul li a{
+    font-size: var(--small-font: 1.25rem);
+    color: var(--white);
+}
+

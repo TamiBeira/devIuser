@@ -1,0 +1,53 @@
+/*Mobile First*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style-type: none;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --gray: #2C3C40;
+    --white: #FFFFFF;
+    --blue: #00A3FF;
+    --blue-hover: #0d7cbb;
+    --yellow: #FF9200;
+
+    --max-screen-width:100%; /*1280px*/
+    --min-screen-width:20rem; /*320px*/
+    --header-height:4.75rem; /*76px*/
+
+    --button-width: 24.375rem; /*390px*/
+    --button-height: 5.75rem; /*92px*/
+    --medium-font-button: 2.25rem; /*36px*/
+    --button-border: 0.063rem; /*1px*/
+    --button-border-radius: 6.25rem; /*100px*/
+    /*Responsivo */
+    --button-width-resp: 9.375rem; /*150px*/
+    --button-height-resp: 2.813rem; /*45px*/
+
+
+    --small-font: 1.25rem; /*20px*/
+    --medium-font: 2rem; /*32px*/
+    --big-font: 4rem; /*64px*/
+
+    --card-width: 20.188rem; /*323px*/
+    --card-height:25.75rem; /*412px*/
+    /*Responsivo */
+    --card-width-resp: 12.5rem; /*200px*/
+    --card-height-resp: 15.625rem; /*250px*/
+}
+
+.container{
+    max-width: var(--max-screen-width);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    //justify-content: center;
+}

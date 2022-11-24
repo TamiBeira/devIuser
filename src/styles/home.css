@@ -1,0 +1,136 @@
+@import "global.css";
+
+/*Mobile First*/
+.home{
+    background-image: url("../../src/assets/background_01.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: #cccccc;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container main{
+    padding: 1.25rem;
+}
+
+.container main p,
+.container main h2,
+.container main h2 strong,
+.container main h4{
+    margin-bottom: 1.25rem;
+    color: var(--white);
+}
+
+.container main p{
+    font-size: var(--small-font: 1.25rem);
+}
+
+.container main h2{
+    font-size: var(--big-font: 2rem);
+    font-family: 'Gugi', cursive;
+}
+
+.container main h2 strong{
+    color: var(--yellow);
+    font-family: 'Gugi', cursive;
+}
+
+.container main h4{
+    font-size: var(--medium-font: 2rem);
+}
+
+.container section .card:hover{
+    --rotateX:-11.0154deg; --rotateY:18.7708deg; transform: rotateX(var(--rotateX))rotateY(var(--rotateY));
+}
+
+.container section .card h2{
+    color: var(--white);
+    position: relative;
+    bottom: 3.125rem;
+    left: 0.625rem;
+}
+
+.container section .card img{
+    width: var(--card-width-resp);
+    height: var(--card-height-resp);
+}
+
+
+/*Adaptação para telas maiores*/
+@media only screen and (min-width: 550px){
+    section .w33{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section .card{
+        margin: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    section .w33{
+        width: 750px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section .card{
+        margin: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .home {
+        height: 100vh;
+    }
+
+    .home .right{
+        width: 300px;
+        height: 400px;
+        text-align: end;
+        margin-left: 30%;
+    }
+
+    .home .right p,
+    .home .right h4,
+    .home .right h2,
+    .home .right button {
+        margin-bottom: 35px;
+    }
+
+    .container main {
+        background-image: url("../../src/assets/logoBack.png");
+        background-size: cover;
+        background-repeat: no-repeat; 
+
+        width: 45%;
+        height:100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container section {
+        width: 55%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .home .right{
+        margin-left: 55%;
+    }
+}
